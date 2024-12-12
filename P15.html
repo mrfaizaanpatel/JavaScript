@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P15</title>
+
+    <style>
+        div{
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <h1 class="heading" id="heading1">heading1</h1> -->
+    
+    <div class="container"></div>
+    <button onclick="display()">Click Here</button>
+    <button onclick="Circle()">Circle</button>
+    <button onclick="SemiCircle()">SemiCircle</button>
+
+    <script>
+        function display()
+        {
+        document.querySelector(".container").innerHTML="<h1 style='color:red'>Hello</h1>"
+        
+        }
+
+        function Circle()
+        {
+            document.querySelector(".container").style.borderRadius="100%"
+        }
+
+        function SemiCircle()
+        {
+            document.querySelector(".container").style.borderRadius="%"
+        }
+    </script>
+</body>
+</html>

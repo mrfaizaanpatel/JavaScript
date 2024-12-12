@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P13</title>
+</head>
+<body>
+    <button onclick="Hello()">Click Here</button>
+    <button onclick="FaizaanPatel()">Display Name</button>
+
+    <input type="text" id="username">
+    <button ondblclick="SubmitName">Submit</button>
+    <script>
+        function Hello()
+        {
+            document.write("<h1>Hello</h1>");
+        }
+
+        function FaizaanPatel()
+        {
+            document.write("<h1>Faizaan Patel</h1>");
+        }
+        function SubmitName()
+        {
+            let username=document.getElementById("username").value;
+            document.write("<h1 style='background-color:red'>"+username+"</h1>");
+        }
+
+        // document.getElementById("username").value
+        // 'Faizaan'
+        // hello();
+        // hello();
+        // hello();
+        // hello();
+
+    </script>
+</body>
+</html>
