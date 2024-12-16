@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P22</title>
+
+</head>
+
+<body>
+    <!-- for(initialization, condition ,increment and decrement) -->
+    <ul id="subjects">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+    <script>
+        //     for(let i=1;i<=5;i++)
+        //  {
+        //     document.write("<h1>"+i+"</h1>");
+        //  }
+
+
+        const listElements = document.getElementById("subjects").children;
+        const colors=["red","green","plum","aqua"];
+        for (let i = 0; i < listElements.length; i++) 
+        {
+            listElements[i].style.backgroundColor=colors[i];
+            listElements[i].style.margin = "2px";
+
+        }
+
+
+    </script>
+</body>
+
+</html>
