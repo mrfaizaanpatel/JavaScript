@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P27</title>
+    <style>
+        #container
+        {
+            background-color: aqua;
+            height: 500px;
+        }
+        #box
+        {
+            background-color: plum;
+            height: 250px;
+            width: 80%;
+        }
+        #heading
+        {
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <h1 id="heading">Faizaan</h1>
+        </div>
+    </div>
+    <script>
+        document.getElementById("container").addEventListener("click",()=>{
+            alert("container");
+        })
+        document.getElementById("box").addEventListener("click",(u)=>{
+            u.stopPropagation();
+            alert("box");
+        })
+        document.getElementById("heading").addEventListener("click",(e)=>{
+            e.stopPropagation();
+            alert("heading");
+        })
+    </script>
+</body>
+</html>
