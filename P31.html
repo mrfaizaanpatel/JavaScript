@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P31</title>
+</head>
+
+<body>
+    <script>
+        function fetechData(callback) {
+            data = " Data from the server";
+            callback(9);
+            // return data;
+        }
+
+        function processData(data) {
+            document.write(data + " processData function");
+        }
+
+        fetechData((n) => {
+            alert(n * n);
+        });
+        // fetchData((m)=>console.log(m))
+        /*fetchData((data)=>{ for(let i=1;i<=10;i++)
+           {
+              document.write("<h1>"+data+"</h1>")
+           }
+        });
+        */
+    </script>
+</body>
+
+</html>
